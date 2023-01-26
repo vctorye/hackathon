@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Soundboard",
+  "version": "1.0",
+  "description": "Jack and Victor's Hackathon Extension",
+  "content_scripts": [
+    {
+      "matches": ["http://*.co.il/*"],
+      "js": ["./main.js"]
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs"
+]
+}
