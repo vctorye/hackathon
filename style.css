@@ -1,0 +1,17 @@
+
+.btn {
+  width: 100px;
+  height: 25px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 80%;
+}

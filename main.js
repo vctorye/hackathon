@@ -4,12 +4,17 @@ const boomButton = document.querySelector('.btn-boom');
 const bingButton = document.querySelector('.btn-bing');
 const oofButton = document.querySelector('.btn-oof');
 const discordButton = document.querySelector('.btn-discord');
+const fartButton = document.querySelector('.btn-fart');
+const aughButton = document.querySelector('.btn-augh');
+const nflButton = document.querySelector('.btn-nfl');
+const spongebobButton = document.querySelector('.btn-spongebob');
+const bkButton = document.querySelector('.btn-bk');
 
 discordButton.addEventListener('click', () => {
   const discordSound = new Audio('./sounds/discord.mp3');
   discordSound.play();
 })
-discordButton.addEventListener('click', () => {
+bingButton.addEventListener('click', () => {
   const bingSound = new Audio('./sounds/bing.mp3');
   bingSound.play();
 })
@@ -22,10 +27,38 @@ oofButton.addEventListener('click', () => {
   oofSound.play();
 })
 
+aughButton.addEventListener('click', () => {
+  const aughSound = new Audio('./sounds/augh.mp3');
+  aughSound.play();
+})
+nflButton.addEventListener('click', () => {
+  const nflSound = new Audio('./sounds/nfl.mp3');
+  nflSound.play();
+})
+spongebobButton.addEventListener('click', () => {
+  const spongebobSound = new Audio('./sounds/spongebob.mp3');
+  spongebobSound.play();
+})
+fartButton.addEventListener('click', () => {
+  const fartSound = new Audio('./sounds/fart.mp3');
+  fartSound.play();
+})
+bkButton.addEventListener('click', () => {
+  const bkSound = new Audio('./sounds/whopper.mp3');
+  bkSound.play();
+})
+
 body.appendChild(boomButton);
 body.appendChild(discordButton)
 body.appendChild(oofButton)
 body.appendChild(bingButton)
+
+
+body.appendChild(aughButton);
+body.appendChild(nflButton)
+body.appendChild(spongebobButton)
+body.appendChild(fartButton)
+body.appendChild(bkButton)
 
 
 

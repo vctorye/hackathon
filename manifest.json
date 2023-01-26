@@ -5,7 +5,7 @@
   "description": "Jack and Victor's Hackathon Extension",
   "action":{
     "default_popup":"window-child.html",
-    "default_icon":"dog.png"
+    "default_icon":"megaphone.png"
   },
   "content_scripts": [
     {
