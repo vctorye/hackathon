@@ -3,14 +3,14 @@
   "name": "Soundboard",
   "version": "1.0",
   "description": "Jack and Victor's Hackathon Extension",
+  "action":{
+    "default_popup":"window-child.html",
+    "default_icon":"dog.png"
+  },
   "content_scripts": [
     {
-      "matches": ["http://*.co.il/*"],
+      "matches": ["http://*.co.il/"],
       "js": ["./main.js"]
     }
-  ],
-  "permissions": [
-    "contextMenus",
-    "tabs"
-]
+  ]
 }

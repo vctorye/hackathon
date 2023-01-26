@@ -1,8 +1,39 @@
+const body = document.querySelector('body');
+
+const boomButton = document.querySelector('.btn-boom');
+const bingButton = document.querySelector('.btn-bing');
+const oofButton = document.querySelector('.btn-oof');
+const discordButton = document.querySelector('.btn-discord');
+
+discordButton.addEventListener('click', () => {
+  const discordSound = new Audio('./sounds/discord.mp3');
+  discordSound.play();
+})
+discordButton.addEventListener('click', () => {
+  const bingSound = new Audio('./sounds/bing.mp3');
+  bingSound.play();
+})
+boomButton.addEventListener('click', () => {
+  const boomSound = new Audio('./sounds/vine-boom.mp3');
+  boomSound.play();
+})
+oofButton.addEventListener('click', () => {
+  const oofSound = new Audio('./sounds/oof.mp3');
+  oofSound.play();
+})
+
+body.appendChild(boomButton);
+body.appendChild(discordButton)
+body.appendChild(oofButton)
+body.appendChild(bingButton)
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  windowOpen("window-child.html","Ratting","width=550,height=170,left=150,top=200,toolbar=0,status=0,")
-  
+
+// document.addEventListener('DOMContentLoaded', () => {
+  // windowOpen("window-child.html","Ratting","width=550,height=170,left=150,top=200,toolbar=0,status=0,")
+
+
+
 
   // const body = document.querySelector('body');
   // const widgetContainer = document.createElement('div');
@@ -78,4 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
   //   const discordSound = new Audio('/sounds/discord.mp3');
   //   discordSound.play();
   // })
-})
+// })
